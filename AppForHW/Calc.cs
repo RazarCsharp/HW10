@@ -8,11 +8,11 @@ namespace AppForHW
 {
     internal class Calc : ISum, INumberInput
     {
-        public int Resolt;
+        public int Result;
         public Calc()
         {
             var color = new Logger();
-            Resolt = Sum(Input(color), Input(color));
+            Result = Sum(Input(color), Input(color));
             Print();
 
         }
@@ -33,7 +33,7 @@ namespace AppForHW
 
         public int Sum(int a, int b) => a + b;
 
-        private void Print() => Console.WriteLine("\nSum is :" + Resolt);
+        private void Print() => Console.WriteLine("\nSum is :" + Result);
 
     }
 }
