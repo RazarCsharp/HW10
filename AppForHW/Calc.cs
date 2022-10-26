@@ -25,6 +25,7 @@ namespace AppForHW
             {
                 int number = Convert.ToInt32(Console.ReadLine());
                 if (number > 0) { return number; }
+                else if (number <= 0) { throw new FormatException("do not enter 0"); }
             }
             catch (Exception e) { color.Red(); Console.WriteLine(e.Message); }
             return Input(color);
